@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scan test</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>testtt</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <section>
+          <canvas id="canvas"></canvas>
+          <label
+            >Link website <small><i>*enter untuk submit</i></small></label
+          >
+          <input
+            placeholder="contoh https://google.com"
+            id="qrInput"
+            onkeydown="if(event.key === 'Enter') generateQR()"
+          />
+          <button onclick="downloadQR()">Unduh QR Code</button>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+        <script src="scriptQR.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

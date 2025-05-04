@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <input placeholder="Masukan nama">
+</body>
+<script>
+    const input = document.getElementsByTagName("input")[0];
+    input.addEventListener("keydown", function(event){
+        if(event.key === "Enter"){
+            if(input.value === ""){
+                console.log("gada isi");
+            } else{
+                console.log("Hallo nama kamu adalah: " + input.value);
+            }
+        }
+    })
+</script>
+</html>

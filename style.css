@@ -1,0 +1,24 @@
+body {
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+canvas {
+  width: 250px;
+  height: 250px;
+  border:#4f4a4a 2px solid;
+  box-shadow: 3px 3px 0px white;
+}
+
+label {
+  color: white;
+}
